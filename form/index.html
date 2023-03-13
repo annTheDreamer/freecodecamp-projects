@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Rating the Last Movie You Saw</title>
+	</head>
+	<body>
+		<h1 id="title">Fantasy World Cinema Rating Form</h1>
+		<p id="description">
+			Please rate the last movie you saw at Fantasy World Cinema - where
+			we take you to a next dimension 🚀
+		</p>
+		<form
+			id="survey-form"
+			method="post"
+			action="https://register-demo.freecodecamp.org"
+		>
+			<fieldset class="info">
+				<label for="name" id="name-label"
+					>Full name:
+					<input
+						id="name"
+						name="name"
+						type="text"
+						required
+						placeholder="Enter your full name"
+				/></label>
+				<label for="email" id="email-label"
+					>Email:
+					<input
+						id="email"
+						name="email"
+						type="email"
+						required
+						placeholder="Enter your email address"
+				/></label>
+				<label for="number" id="number-label"
+					>Age:
+					<input
+						id="number"
+						name="number"
+						type="number"
+						min="13"
+						max="110"
+						placeholder="Enter your age"
+				/></label>
+			</fieldset>
+			<fieldset>
+				<label for="dropdown" class="dropdown-menu"
+					>Please select the movie you saw:
+					<select id="dropdown" name="dropdown">
+						<option value="">(select one)</option>
+						<option value="Sharper">Sharper</option>
+						<option value="Romancham">Romancham</option>
+						<option value="Knock at the Cabin">
+							Knock at the Cabin
+						</option>
+						<option value="Maybe I Do">Maybe I Do</option>
+						<option value="Plane">Plane</option>
+					</select></label
+				>
+				<div class="radio-btns">
+					<label for="loved" class="radio-btn"
+						><input
+							id="loved"
+							value="loved"
+							type="radio"
+							name="rating"
+							class="buttons"
+						/>
+						Loved It</label
+					>
+					<label for="mediocre" class="radio-btn"
+						><input
+							id="mediocre"
+							value="mediocre"
+							type="radio"
+							name="rating"
+							class="buttons"
+						/>
+						Not Great, Not Terrible</label
+					>
+					<label for="hated" class="radio-btn"
+						><input
+							id="hated"
+							value="hated"
+							type="radio"
+							name="rating"
+							class="buttons"
+						/>
+						Hated It</label
+					>
+				</div>
+				<p>What genre would you like to see next?</p>
+				<div class="checkboxes">
+					<label for="thriller">
+						<input
+							id="thriller"
+							name="thriller"
+							type="checkbox"
+							value="Thriller"
+							class="buttons"
+						/>
+						Thriller
+					</label>
+					<label for="horror">
+						<input
+							id="horror"
+							name="horror"
+							type="checkbox"
+							value="Horror"
+							class="buttons"
+						/>
+						Horror
+					</label>
+					<label for="comedy">
+						<input
+							id="comedy"
+							name="comedy"
+							type="checkbox"
+							value="Comedy"
+							class="buttons"
+						/>
+						Comedy
+					</label>
+					<label for="action">
+						<input
+							id="action"
+							name="action"
+							type="checkbox"
+							value="Action"
+							class="buttons"
+						/>
+						Action
+					</label>
+					<label for="drama">
+						<input
+							id="drama"
+							name="drama"
+							type="checkbox"
+							value="Drama"
+							class="buttons"
+						/>
+						Drama
+					</label>
+					<label for="science-fiction">
+						<input
+							id="science-fiction"
+							name="science-fiction"
+							type="checkbox"
+							value="Science-Fiction"
+							class="buttons"
+						/>
+						Science-Fiction
+					</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<label for="additional-info"
+					>Anything you would like to add?
+					<textarea
+						id="additional-info"
+						name="additional-info"
+						cols="30"
+						rows="5"
+						placeholder="Any comments/thoughts are welcome :)"
+					></textarea>
+				</label>
+			</fieldset>
+			<input type="submit" value="Submit" id="submit" />
+		</form>
+	</body>
+</html>

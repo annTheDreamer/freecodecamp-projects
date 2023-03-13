@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+body {
+	background-color: #b2fff2;
+	background-image: url('background.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+}
+
+h1,
+#description {
+	margin: 2em auto;
+	text-align: center;
+}
+
+#description {
+	margin-top: 5%;
+	margin-bottom: 2rem;
+	width: 70vw;
+}
+
+form {
+	margin: auto;
+	max-width: 500px;
+	min-width: 300px;
+	width: 60vw;
+}
+
+fieldset {
+	margin: 1rem;
+	padding: 1rem;
+	padding-bottom: 2rem;
+	border: none;
+	border-bottom: 3px solid #222;
+}
+
+label {
+	display: block;
+	margin: 5px;
+}
+
+input {
+	display: block;
+	width: 200px;
+	margin-top: 5px;
+}
+
+textarea,
+.info input {
+	padding: 7px;
+	margin-bottom: 10px;
+	width: 100%;
+	border: none;
+	box-shadow: 4px 3px 6px #00caa8bb;
+	border-radius: 5px;
+}
+
+textarea {
+	margin-top: 10px;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.radio-btns {
+	margin: 20px 0;
+}
+
+.buttons {
+	width: unset;
+	vertical-align: middle;
+	display: inline;
+	margin: 0;
+}
+
+.dropdown-menu {
+	margin: 10px 0;
+}
+
+#dropdown {
+	display: block;
+	width: 98%;
+	padding: 7px;
+	margin-top: 1em;
+	margin-left: 5px;
+	border: none;
+	box-shadow: 4px 3px 6px #00caa8bb;
+	border-radius: 5px;
+}
+
+input[type='submit'] {
+	margin: 1.5rem auto;
+	height: 2rem;
+	width: 10rem;
+	border-color: #00caa8;
+	box-shadow: 4px 3px 6px #00caa8bb;
+	border-radius: 20px;
+	background-color: transparent;
+	font-weight: bolder;
+	cursor: pointer;
+	transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+input[type='submit']:hover {
+	background-color: #00caa8;
+	color: azure;
+}
+
+fieldset:last-of-type {
+	border: none;
+}
+
+.checkboxes {
+	vertical-align: top;
+}
